@@ -31,3 +31,7 @@ inline fun <reified T: I, reified I> diReg() {
 inline fun <reified T> diUnreg() {
     kraftingGlobalInjector.unregister(T::class.java)
 }
+
+fun diReg(obj: Any) {
+    kraftingGlobalInjector.register(obj)
+}
